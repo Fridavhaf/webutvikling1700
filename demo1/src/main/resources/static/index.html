@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label for="inn">Navn</label>
+    <!--- en input box trenger en label ellers feilmelding --->
+    <input type="text" onchange="visNavn(this.value)" id="inn"/>
+    <button onclick="visMelding()">Vis melding</button>
+    <div id="navn">ut</div>
+    <div id="melding">ut</div>
+
+    <script type="application/javascript">
+
+
+        //To måter å få bekreftet at et navn er satt: consoll vs. alert
+        function visMelding() {
+            document.getElementById("melding").innerHTML = "<h2>Hallo!</h2>";
+            console.log("Inne i visMelding()");
+        }
+
+        function visNavn(navnet){
+            //let navnet = document.getElementById("inn").value;
+            document.getElementById("navn").innerText = navnet;
+            alert("Navnet er " + navnet);
+        }
+    </script>
+
+<p>JavaScript demo</p>
+<script type="application/javascript">
+    alert("Hello World")
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 1 - Kodegjennomgang</title>
+    <script type="application/javascript" src="index.js"></script> <!-- This one -->
+</head>
+<body>
+<!-- code here -->
+<!-- everything should be on seperate lines just for organization, therefore section -->
+<h1>JavaScript 1 - Kodegjennomgang</h1>
+<section>
+    <h2>Oppgave 1</h2>
+<!-- we are creating a function called helloWorld, and we refer to it in the js-file-->
+    <button onclick="helloWorld()">Click me!</button>
+</section>
+
+<section>
+    <h2>Oppgave 2</h2>
+    <button onclick="helloAlert()">Click me!</button>
+<!-- I have a button, and when I click on it, it's going to call a function -->
+</section>
+
+<section>
+    <h2>Oppgave 3</h2>
+<!-- Labels can be added for accessibility -->
+    <label for="opp3">Write your text : </label>
+<!-- When we have  a label we want to identify -->
+<!-- We need to pass the value that is coming in the input="text"-->
+    <input id="opp3" type="text" onchange="toNewPage(this.value)">
+<!-- With this.value we are automatically passing the value that is in the input to the new page-->
+</section>
+
+<section>
+    <h2>Oppgave 4</h2>
+    <label for="opp4">Write your text : </label>
+    <!-- again: we need to pass the value that is coming in the input="text"-->
+    <input id="opp4" type="text" onchange="toAlert(this.value)">
+    <!-- With this.value we are automatically passing the value that is in the input to the new page-->
+</section>
+
+<section>
+    <h2>Oppgave 5</h2>
+    <label for="opp5">Write your text : </label>
+    <!-- again: we need to pass the value that is coming in the input="text"-->
+    <input id="opp5" type="text" onchange="toConsole(this.value)">
+    <!-- With this.value we are automatically passing the value that is in the input to the new page-->
+</section>
+
+<section>
+    <h2>Oppgave 6</h2>
+    <label for="opp6">Write your text : </label>
+    <input id="opp6" type="text" onchange="toNewPageColor(this.value)">
+</section>
+
+<section>
+    <h2>Oppgave 7</h2>
+    <label for="opp7">Write your text : </label>
+    <input id="opp7" type="text" onchange="toUpperCaseAlert(this.value)">
+</section>
+
+<section>
+    <h2>Oppgave 8</h2>
+    <button onclick="showOne()">Click for 1</button>
+</section>
+
+<section>
+    <h2>Oppgave 9</h2>
+    <button onclick="showNrOfClicks()">Click me!</button>
+</section>
+
+<section>
+    <h2>Oppgave 10</h2>
+    <button onclick="nrOfClicksWithString()">Click me!</button>
+</section>
+
+</body>
+</html>
